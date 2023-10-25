@@ -8,18 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Customer extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
         'name',
         'email',
         'address',
     ];
-    
+
     protected $hidden = [
         'created_at',
         'updated_at',
     ];
-    
+
     /**
      * The attributes that should be cast to native types.
      *

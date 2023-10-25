@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-       
-        
+
         Schema::create('customers', function (Blueprint $table) {
             $table->id(); // Creates an auto-incrementing primary key column
             $table->string('name');
-            $table->string('email')->unique();  
-            $table->text('address')->nullable(); 
-            $table->timestamps();  
+            $table->string('email')->unique();
+            $table->text('address')->nullable();
+            $table->timestamps();
         });
     }
 
